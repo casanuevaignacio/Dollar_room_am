@@ -5,20 +5,23 @@ plugins {
 }
 
 android {
+
     namespace = "com.example.dollar_room_am"
-    compileSdk {
-        version = release(36)
-    }
+
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.dollar_room_am"
         minSdk = 28
-        targetSdk = 36
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+
+
+
 
     buildTypes {
         release {
@@ -40,7 +43,7 @@ android {
         viewBinding = true
     }
 }
-val room_version = "2.8.4"
+val room_version = "2.6.1"
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
